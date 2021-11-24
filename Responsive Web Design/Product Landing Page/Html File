@@ -1,0 +1,135 @@
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous"
+/>
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img
+        id="header-img"
+        src="data:image/png;base64,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"
+        alt="original trombones logo"
+      />
+    </div>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container"></div>
+
+  <section id="hero">
+    <h2>Start Building on AWS Today</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+  </section>
+
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-cloud"></i></div>
+        <div class="desc">
+          <h2>Secure Data</h2>
+          <p>
+            AWS provides a scalable cloud-computing platform that provides customers with end-to-end security and end-to-end privacy.
+AWS incorporates the security into its services, and documents to describe how to use the security features.
+AWS maintains confidentiality, integrity, and availability of your data which is the utmost importance of the aws.
+
+<p>Secure services: Each service provided by the AWS cloud is secure.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-money"></i></div>
+        <div class="desc">
+          <h2>Cost-effective</h2>
+          <p>
+            AWS provides no upfront investment, long-term commitment, or minimum spend.
+            <p>An aws allows you to access the resources more instantly. It has the ability to respond the changes more quickly
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-random" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Flexibility</h2>
+          <p>
+            Flexibility
+The difference between AWS and traditional IT models is flexibility.
+The traditional models used to deliver IT solutions that require large investments in a new architecture, programming languages, and operating system. Although these investments are valuable, it takes time to adopt new technologies and can also slow down your business.
+<p>The flexibility of AWS allows us to choose which programming models, languages, and operating systems are better suited for their project, so we do not have to learn new skills to adopt new technologies.
+  </p>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works">
+      <iframe
+        id="video"
+        height="315"
+        src="https://www.youtube.com/embed/a9__D53WsUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id="pricing">
+      <div class="product" id="EC2">
+        <div class="level">Tenor Trombone</div>
+        <h2>$650</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="EC3">
+        <div class="level">Bass Trombone</div>
+        <h2>$900</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="ON DEMAND">
+        <div class="level">Valve Trombone</div>
+        <h2>$1200</h2>
+        <ol>
+          <li>ON DEMAND OVER GLOBE.</li>
+          <li>1-3 YEAR COMMITMENT</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2021, Original AWS.</span>
+    </footer>
+  </div>
+</div>

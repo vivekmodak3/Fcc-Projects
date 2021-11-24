@@ -1,0 +1,510 @@
+<nav id="navbar">
+  <header>PYTHON Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#What_you_should_already_know"
+        >Characteristics of Python</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#JavaScript_and_Java"> Applications of Python</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>
+    <li>
+      <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+    </li>
+    <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+    <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+    <li><a class="nav-link" href="#Constants">Constants</a></li>
+    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+    <li>
+      <a class="nav-link" href="#if...else_statement">if...else statement</a>
+    </li>
+    <li><a class="nav-link" href="#while_statement">while statement</a></li>
+    <li>
+      <a class="nav-link" href="#Function_declarations"
+        >Function declarations</a
+      >
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). This tutorial gives enough understanding on Python programming language.
+      </p>
+
+      <p>
+        Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
+
+Python is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning Python:
+      </p>
+      <ul>
+        <li>
+          Python is Interpreted − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.
+
+Python is Interactive − You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.
+        </li>
+        <li>
+         Python is Object-Oriented − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.
+
+Python is a Beginner's Language − Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>Characteristics of Python</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+
+      <ul>
+        <li>
+         It supports functional and structured programming methods as well as OOP.
+        </li>
+        <li>It can be used as a scripting language or can be compiled to byte-code for building large applications..</li>
+        <li>
+          It provides very high-level dynamic data types and supports dynamic type checking.
+
+It supports automatic garbage collection.
+
+It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="JavaScript_and_Java">
+    <header>Applications of Python</header>
+    <article>
+      <p>
+        Easy-to-learn − Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.
+
+Easy-to-read − Python code is more clearly defined and visible to the eyes.
+
+Easy-to-maintain − Python's source code is fairly easy-to-maintain.
+
+A broad standard library − Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.
+
+Interactive Mode − Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.
+      </p>
+
+      <p>
+        Portable − Python can run on a wide variety of hardware platforms and has the same interface on all platforms.
+
+Extendable − You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.
+
+Databases − Python provides interfaces to all major commercial databases.
+      </p>
+      <p>
+       GUI Programming − Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.
+
+Scalable − Python provides a better structure and support for large programs than shell scripting.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article>
+      To get started with writing PYTHON, open the Scratchpad and write your
+      first "Hello world" PYTHON code:
+      <code
+        >print ("Hello, Python!");
+      </code>
+
+      Select the code in the pad and hit Ctrl+R to watch it unfold in your
+      browser!
+    </article>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <p>
+      You use variables as symbolic names for values in your application. The
+      names of variables, called identifiers, conform to certain rules.
+    </p>
+    <p>
+     Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.
+    </p>
+    <p>
+     Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables.
+    </p>
+  </section>
+  <section class="main-section" id="Declaring_variables">
+    <header>Declaring variables.</header>
+    <article>
+      You can declare a variable in Python in following ways:
+      <p>
+       Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.
+
+The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For example − <code> #!/usr/bin/python
+
+counter = 100          # An integer assignment
+miles   = 1000.0       # A floating point
+name    = "John"       # A string
+
+print counter
+print miles
+        print name</code> </p>
+      <p>
+       Here, 100, 1000.0 and "John" are the values assigned to counter, miles, and name variables, respectively. This produces the following result − <code> 100
+1000.0
+John</code> 
+      </p>
+      <p>
+       Python allows you to assign a single value to several variables simultaneously. For example −<code> a = b = c = 1</code> <p>Here, an integer object is created with the value 1, and all three variables are assigned to the same memory location. You can also assign multiple objects to multiple variables. For example −<code>a,b,c = 1,2,"john"</code>Here, two integer objects with values 1 and 2 are assigned to variables a and b respectively, and one string object with the value "john" is assigned to the variable c.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Variable_scope">
+    <header>Variable scope</header>
+    <article>
+      <p>
+       The scope of a variable in python is that part of the code where it is visible. Actually, to refer to it, you don’t need to use any prefixes then.
+        A valuable aspect of the “encapsulation” provided by functions is that the function’s input argument variables, and any variables defined within the function, cannot be “seen” nor accessed outside of the function. That is, these variables are said to have a restricted scope.
+      </p>
+
+      <p>
+        Until our work with comprehension-statements and functions, we had only encountered variables that have file scope. This means that a variable, once defined, is visible to all parts of the code contained in the same file. Variables with file scope can even be accessed within functions. By contrast, the variables defined within a function or as input arguments to a function have a restricted scope - they can only be accessed within the context of the function:
+      </p>
+      <code> x = 3  # `x` has file scope. It can be even be accessed
+       # within a function, even if it isn't passed to
+       # the function as an argument
+
+# `my_func` has file scope (after it is defined)
+def my_func(y):
+    func_var = 9 + x  # `x` will have the value 3
+    # the scope of `y` and `func_var` is restricted to this function
+    return y
+
+# `func_var` and `y` do not exist here
+print(func_var)  # raises NameError: name `func_var` not defined
+print(y)         # raises NameError: name `y` not defined</code>
+      <p>
+        Python’s scoping rules are quite liberal compared to those of other languages, like C++. In most situations, Python will give variables file scope. Let’s briefly survey the various contexts in which variables are defined, along with their corresponding scoping rules. Assume that the following code represents the entire contents of the Python script “example_scope.py”
+      </p>
+
+      <code
+        ># this demonstrates scope of variables in different contexts
+# nothing meaningful is computed in this file
+
+from itertools import combinations  # `combinations` has file scope
+
+# `my_func` has file scope
+# `in_arg1` has restricted scope
+# `in_arg2` has restricted scope
+# `func_block` has restricted scope
+def my_func(in_arg1, in_arg2="cat"):
+    func_block = 1
+    return None
+
+# `file_var` has file scope
+# `comp_var` has restricted scope
+file_var = [comp_var**2 for comp_var in [-1, -2]]
+
+# `if_block` has file scope
+if True:
+    if_block = 2
+else:
+    if_block = 3
+
+# `it_var` has file scope
+# `for_block` has file scope
+for it_var in [1, 2, 3]:
+    for_block = 1
+
+# `while_block` has file scope
+while True:
+    while_block = None
+    break</code>
+    </article>
+  </section>
+  <section class="main-section" id="Global_variables">
+    <header>Global variables</header>
+    <article>
+      <p>
+       Variables that are created outside of a function (as in all of the examples above) are known as global variables.
+
+Global variables can be used by everyone, both inside of functions and outside.
+        If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.
+      </p>
+
+      <p>
+        The global Keyword
+
+Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+
+To create a global variable inside a function, you can use the global keyword.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <article>
+      <p>
+        A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be changed later.
+
+You can think of constants as a bag to store some books which cannot be replaced once placed inside the bag.
+      </p>
+
+      <code> PI = 3.14
+GRAVITY = 9.8</code>
+      <p>
+        In Python, constants are usually declared and assigned in a module. Here, the module is a new file containing variables, functions, etc which is imported to the main file. Inside the module, constants are written in all capital letters and underscores separating the words.
+      </p>
+
+      <p>
+       In the above program, we create a constant.py module file. Then, we assign the constant value to PI and GRAVITY. After that, we create a main.py file and import the constant module. Finally, we print the constant value.
+      </p>
+
+      <p>
+        Note: In reality, we don't use constants in Python. Naming them in all capital letters is a convention to separate them from variables, however, it does not actually prevent reassignment.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Data_types">
+    <header>Data types</header>
+    <article>
+      <p> The data stored in memory can be of many types. For example, a person's age is stored as a numeric value and his or her address is stored as alphanumeric characters. Python has various standard data types that are used to define the operations possible on them and the storage method for each of them.
+
+Python has five standard data types −</p>
+      <ul>
+        <li>
+          <p>Five data types that are primitives:</p>
+          <ul>
+            <li>Number data types store numeric values. Number objects are created when you assign a value to them.</li>
+            <li>
+              String: Strings in Python are identified as a contiguous set of characters represented in the quotation marks. Python allows for either pairs of single or double quotes. Subsets of strings can be taken using the slice operator ([ ] and [:] ) with indexes starting at 0 in the beginning of the string and working their way from -1 at the end.
+
+The plus (+) sign is the string concatenation operator and the asterisk (*) is the repetition operator.
+            </li>
+            <li> Python Lists: Lists are the most versatile of Python's compound data types. A list contains items separated by commas and enclosed within square brackets ([]). To some extent, lists are similar to arrays in C. One difference between them is that all the items belonging to a list can be of different data type.
+
+The values stored in a list can be accessed using the slice operator ([ ] and [:]) with indexes starting at 0 in the beginning of the list and working their way to end -1. The plus (+) sign is the list concatenation operator, and the asterisk (*) is the repetition operator. </li>
+            <li> list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+tinylist = [123, 'john']</li>
+            <li> Python Tuples: A tuple is another sequence data type that is similar to the list. A tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.
+
+The main differences between lists and tuples are: Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and cannot be updated. Tuples can be thought of as read-only lists.</li>
+            <li>
+              tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  )
+tinytuple = (123, 'john')
+
+print tuple               # Prints the complete tuple
+print tuple[0]            # Prints first element of the tuple
+print tuple[1:3]          # Prints elements of the tuple starting from 2nd till 3rd 
+print tuple[2:]           # Prints elements of the tuple starting from 3rd element
+print tinytuple * 2       # Prints the contents of the tuple twice
+print tuple + tinytuple   # Prints concatenated tuples
+            </li>
+          </ul>
+        </li>
+
+        <li>and Python Dictionary</li>
+      </ul>
+      Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.
+
+Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]).
+    </article>
+  </section>
+  <section class="main-section" id="if...else_statement">
+    <header>if...else statement</header>
+    <article>
+     It has the ability to iterate over the items of any sequence, such as a list or a string.
+
+Syntax
+
+      <code> for iterating_var in sequence:
+   statements(s)</code>
+      If a sequence contains an expression list, it is evaluated first. Then, the first item in the sequence is assigned to the iterating variable iterating_var. Next, the statements block is executed. Each item in the list is assigned to iterating_var, and the statement(s) block is executed until the entire sequence is exhausted.
+      <p>Example</p>
+      <code>#!/usr/bin/python
+
+for letter in 'Python':     # First Example
+   print 'Current Letter :', letter
+
+fruits = ['banana', 'apple',  'mango']
+for fruit in fruits:        # Second Example
+   print 'Current fruit :', fruit
+
+print "Good bye!"
+
+        When the above code is executed, it produces the following result −
+
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current Letter : h
+Current Letter : o
+Current Letter : n
+Current fruit : banana
+Current fruit : apple
+Current fruit : mango
+Good bye!
+      </code>
+      Iterating by Sequence Index
+An alternative way of iterating through each item is by index offset into the sequence itself. Following is a simple example −
+
+      <code
+        >  #!/usr/bin/python
+
+fruits = ['banana', 'apple',  'mango']
+for index in range(len(fruits)):
+   print 'Current fruit :', fruits[index]
+
+print "Good bye!"
+When the above code is executed, it produces the following result −
+
+Current fruit : banana
+Current fruit : apple
+Current fruit : mango
+Good bye!</code
+      >
+      Here, we took the assistance of the len() built-in function, which provides the total number of elements in the tuple as well as the range() built-in function to give us the actual sequence to iterate over.
+    </article>
+  </section>
+  <section class="main-section" id="while_statement">
+    <header>while statement</header>
+    <article>
+      In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on. There may be a situation when you need to execute a block of code several number of times.
+
+Programming languages provide various control structures that allow for more complicated execution paths.
+
+A loop statement allows us to execute a statement or group of statements multiple times. The following diagram illustrates a loop statement −
+      
+      A while loop statement in Python programming language repeatedly executes a target statement as long as a given condition is true.
+
+Syntax
+The syntax of a while loop in Python programming language is −
+
+      <code>while expression:
+   statement(s)</code> Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any non-zero value. The loop iterates while the condition is true.
+
+When the condition becomes false, program control passes to the line immediately following the loop.
+
+In Python, all the statements indented by the same number of character spaces after a programming construct are considered to be part of a single block of code. Python uses indentation as its method of grouping statements.
+
+      <p>
+        Here, key point of the while loop is that the loop might not ever run. When the condition is tested and the result is false, the loop body will be skipped and the first statement after the while loop will be executed.
+      </p>
+
+      <p> Example :</p>
+
+      <code>#!/usr/bin/python
+
+count = 0
+while (count < 9):
+   print 'The count is:', count
+   count = count + 1
+
+print "Good bye!"
+When the above code is executed, it produces the following result −
+
+The count is: 0
+The count is: 1
+The count is: 2
+The count is: 3
+The count is: 4
+The count is: 5
+The count is: 6
+The count is: 7
+The count is: 8
+Good bye!</code>
+      <p>
+        The block here, consisting of the print and increment statements, is executed repeatedly until count is no longer less than 9. With each iteration, the current value of the index count is displayed and then increased by 1.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Function_declarations">
+    <header>Function declarations</header>
+    <article>
+     A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.
+
+As you already know, Python gives you many built-in functions like print(), etc. but you can also create your own functions. These functions are called user-defined functions.
+      <p>You can define functions to provide the required functionality. Here are simple rules to define a function in Python.</p>
+
+      <ul>
+        <li>Function blocks begin with the keyword def followed by the function name and parentheses ( ( ) ).
+
+Any input parameters or arguments should be placed within these parentheses. You can also define parameters inside these parentheses.</li>
+        <li>
+          The first statement of a function can be an optional statement - the documentation string of the function or docstring.
+        </li>
+        <li>
+          The code block within every function starts with a colon (:) and is indented.
+
+The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.
+        </li>
+      </ul>
+      <p>
+        For example, the following code defines how to declare a python function.
+      </p>
+
+      <code>def functionname( parameters ):
+   "function_docstring"
+   function_suite
+   return [expression]</code>
+      <p>
+       Calling a Function
+Defining a function only gives it a name, specifies the parameters that are to be included in the function and structures the blocks of code.
+
+Once the basic structure of a function is finalized, you can execute it by calling it from another function or directly from the Python prompt. Following is the example to call printme() function −
+      </p>
+      <code>#!/usr/bin/python
+
+# Function definition is here
+def printme( str ):
+   "This prints a passed string into this function"
+   print str
+   return;
+
+# Now you can call printme function
+printme("I'm first call to user defined function!")
+printme("Again second call to the same function")
+
+        When the above code is executed, it produces the following result −
+
+I'm first call to user defined function!
+Again second call to the same function</code>
+      <p>
+        Pass by reference vs value
+All parameters (arguments) in the Python language are passed by reference. It means if you change what a parameter refers to within a function, the change also reflects back in the calling function. For example −
+        <code>  #!/usr/bin/python
+
+# Function definition is here
+def changeme( mylist ):
+   "This changes a passed list into this function"
+   mylist.append([1,2,3,4]);
+   print "Values inside the function: ", mylist
+   return
+
+# Now you can call changeme function
+mylist = [10,20,30];
+changeme( mylist );
+print "Values outside the function: ", mylist
+
+          Here, we are maintaining reference of the passed object and appending values in the same object. So, this would produce the following result −
+
+Values inside the function:  [10, 20, 30, [1, 2, 3, 4]]
+Values outside the function:  [10, 20, 30, [1, 2, 3, 4]]</code>
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+            target="_blank"
+            >MDN</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>

@@ -1,0 +1,22 @@
+body{
+  color: blue;
+}
+a{
+  color: red;
+}
+a:hover{
+  color: green;
+}
+header{
+  color: white;
+    margin-bottom: 20px;
+
+}
+form{
+    margin: auto;
+  width:70vw;
+  padding: 10px 20px;
+}
+footer{
+  margin-top: 20px;
+}
